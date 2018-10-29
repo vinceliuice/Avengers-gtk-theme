@@ -33,18 +33,19 @@ $nautilus_button: if($variant == 'light', rgba(black, 0.05), rgba(white, 0.03));
     background-color: rgba($selected_bg_color, 0.75);
     &:hover {
       background-color: $selected_bg_color;
-      border-color: if($titlebar == 'light', $sec_selected_bg_color, $alt_selected_bg_color); }
+      border-color: if($titlebar == 'light', $sec_selected_bg_color, $alt_selected_bg_color);
+		}
   }
 }
 
 %nautilus_bg_img_top {
-  background-image: -gtk-scaled(url("assets/nautilus_bg_img_top.jpg"));
+  background-image: -gtk-scaled(url("theme-assets/nautilus_bg_img_top.jpg"));
   background-repeat: no-repeat;
   background-position: bottom right;
 }
 
 %nautilus_bg_img_bottom {
-  background-image: -gtk-scaled(url("assets/nautilus_bg_img_bottom.jpg"));
+  background-image: -gtk-scaled(url("theme-assets/nautilus_bg_img_bottom.jpg"));
   background-repeat: no-repeat;
   background-position: top right;
 }
@@ -64,6 +65,9 @@ $nautilus_button: if($variant == 'light', rgba(black, 0.05), rgba(white, 0.03));
     color: $header_fg;
     background: none;
     box-shadow: inset 0 -1px $selected_bg_color, 0 1px $selected_bg_color;
+    &:hover {
+      background: none;
+		}
   }
 }
 
@@ -72,13 +76,14 @@ $nautilus_button: if($variant == 'light', rgba(black, 0.05), rgba(white, 0.03));
     margin: $icon_padding 0;
     border-radius: 2px;
     color: $header_fg;
-    background-color: transparent;
+    background: none;
     border: 1px solid transparent;
     button { @extend %pathbar_box_button; }
 
     &.width-maximized {
       border: 1px solid if($titlebar == 'light', rgba(black, 0.12), rgba(white, 0.12));
       background-color: rgba($header_fg, 0.03);
+			button { @extend %pathbar_box_button; }
     }
 
     // workaround for 3.30.1
@@ -146,6 +151,7 @@ $nautilus_button: if($variant == 'light', rgba(black, 0.05), rgba(white, 0.03));
     box-shadow: inset 0 -1px $borders_color;
 
     button:not(.titlebutton) { @extend %nautilus_header_button; }
+    entry, entry:focus { background-color: rgba($base_color, 0.45); }
 
     button.titlebutton {
       &.appmenu  { // appmenu button
@@ -155,7 +161,7 @@ $nautilus_button: if($variant == 'light', rgba(black, 0.05), rgba(white, 0.03));
         border-radius: 0;
         color: transparent;
         background-color: transparent;
-        background-image: -gtk-scaled(url("assets/logo.png"));
+        background-image: -gtk-scaled(url("theme-assets/logo.png"));
         background-repeat: no-repeat;
         background-position: center;
 

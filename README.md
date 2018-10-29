@@ -36,3 +36,5 @@ Search for the engines in your distributions repository or install the engines f
 
   ./Install
 
+## Screenshots
+![1](https://github.com/vinceliuice/Qogir-theme/blob/master/screenshot.jpeg?raw=true)

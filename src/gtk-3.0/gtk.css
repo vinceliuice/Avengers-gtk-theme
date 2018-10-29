@@ -4460,7 +4460,7 @@ decoration:backdrop {
 
 tooltip.csd decoration {
   border-radius: 2px;
-  box-shadow: 0 1px 3px 0 transparent;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0);
 }
 
 messagedialog.csd decoration {
@@ -4720,7 +4720,7 @@ terminal-window notebook scrollbar,
 }
 
 .nautilus-window headerbar {
-  background-image: -gtk-scaled(url("assets/nautilus_bg_img_top.jpg"));
+  background-image: -gtk-scaled(url("theme-assets/nautilus_bg_img_top.jpg"));
   background-repeat: no-repeat;
   background-position: bottom right;
 }
@@ -4728,12 +4728,12 @@ terminal-window notebook scrollbar,
 .nautilus-window,
 .nautilus-window notebook,
 .nautilus-window notebook > stack {
-  background-image: -gtk-scaled(url("assets/nautilus_bg_img_bottom.jpg"));
+  background-image: -gtk-scaled(url("theme-assets/nautilus_bg_img_bottom.jpg"));
   background-repeat: no-repeat;
   background-position: top right;
 }
 
-.nautilus-window headerbar .path-bar-box button {
+.nautilus-window headerbar .path-bar-box button, .nautilus-window headerbar .path-bar-box.width-maximized button {
   margin: 0;
   padding: 1px 8px 3px 8px;
   border-radius: 0;
@@ -4752,11 +4752,15 @@ terminal-window notebook scrollbar,
   box-shadow: inset 0 -1px #5294e2, 0 1px #5294e2;
 }
 
+.nautilus-window headerbar .path-bar-box button:checked:hover, .nautilus-window headerbar .path-bar-box button:active:hover {
+  background: none;
+}
+
 .nautilus-window headerbar .path-bar-box {
   margin: 6px 0;
   border-radius: 2px;
   color: rgba(207, 218, 231, 0.8);
-  background-color: transparent;
+  background: none;
   border: 1px solid transparent;
 }
 
@@ -4832,6 +4836,10 @@ popover.background label.nautilus-canvas-item.separator, popover.background labe
   box-shadow: inset 0 -1px rgba(255, 255, 255, 0.12);
 }
 
+.nautilus-window headerbar entry, .nautilus-window headerbar entry:focus {
+  background-color: rgba(24, 24, 24, 0.45);
+}
+
 .nautilus-window headerbar button.titlebutton.appmenu {
   border: none;
   min-height: 30px;
@@ -4839,7 +4847,7 @@ popover.background label.nautilus-canvas-item.separator, popover.background labe
   border-radius: 0;
   color: transparent;
   background-color: transparent;
-  background-image: -gtk-scaled(url("assets/logo.png"));
+  background-image: -gtk-scaled(url("theme-assets/logo.png"));
   background-repeat: no-repeat;
   background-position: center;
 }
