@@ -34,7 +34,7 @@ Search for the engines in your distributions repository or install the engines f
 
 ## Install
 
-  ./installer
+  ./installer.sh
 
 ## Screenshots
 ![1](https://github.com/vinceliuice/Avengers-gtk-theme/blob/master/screenshot.jpeg?raw=true)
