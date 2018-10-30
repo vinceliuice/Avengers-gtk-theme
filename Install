@@ -48,7 +48,7 @@ install() {
 
   mkdir -p                                                                           ${THEME_DIR}/gtk-3.0
   cp -ur ${SRC_DIR}/src/gtk-3.0/assets                                               ${THEME_DIR}/gtk-3.0
-	cp -ur ${SRC_DIR}/src/gtk-3.0/theme-assets                                         ${THEME_DIR}/gtk-3.0
+  cp -ur ${SRC_DIR}/src/gtk-3.0/theme-assets                                         ${THEME_DIR}/gtk-3.0
   cp -ur ${SRC_DIR}/src/gtk-3.0/gtk.css                                              ${THEME_DIR}/gtk-3.0/gtk.css
   cp -ur ${SRC_DIR}/src/gtk-3.0/thumbnail.png                                        ${THEME_DIR}/gtk-3.0/thumbnail.png
 }
