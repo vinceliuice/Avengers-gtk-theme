@@ -556,7 +556,7 @@ button {
     border-radius: 100px;
     -gtk-outline-radius: 100px;
 
-    &:checked, &:active { border-color: $borders_color; }
+    @if $variant=='dark' { &:checked, &:active { border-color: $borders_color; }}
 
     label { padding: 0; }
   }
