@@ -5156,11 +5156,11 @@ widget#STORAGE list {
 }
 
 widget#STORAGE list row.activatable, widget#STORAGE list .view, widget#STORAGE list textview text, textview widget#STORAGE list text, widget#STORAGE list iconview, widget#STORAGE list .nemo-window .nemo-places-sidebar .places-treeview, .nemo-window .nemo-places-sidebar widget#STORAGE list .places-treeview, widget#STORAGE list .panel popover .sidebar .view, .panel popover .sidebar widget#STORAGE list .view, widget#STORAGE list treeview.view.sidebar.source-list, widget#STORAGE list .budgie-popover row, .budgie-popover widget#STORAGE list row, widget#STORAGE list .budgie-menu button, .budgie-menu widget#STORAGE list button {
-  color: scale-alpha(#D3DAE3, 0.75);
+  color: rgba(211, 218, 227, 0.75);
 }
 
 widget#STORAGE list row.activatable:hover, widget#STORAGE list .view:hover, widget#STORAGE list textview text:hover, textview widget#STORAGE list text:hover, widget#STORAGE list iconview:hover, widget#STORAGE list .nemo-window .nemo-places-sidebar .places-treeview:hover, .nemo-window .nemo-places-sidebar widget#STORAGE list .places-treeview:hover, widget#STORAGE list .panel popover .sidebar .view:hover, .panel popover .sidebar widget#STORAGE list .view:hover, widget#STORAGE list treeview.view.sidebar.source-list:hover, widget#STORAGE list .budgie-popover row:hover, .budgie-popover widget#STORAGE list row:hover, widget#STORAGE list .budgie-menu button:hover, .budgie-menu widget#STORAGE list button:hover, widget#STORAGE list row.activatable:active, widget#STORAGE list .view:active, widget#STORAGE list textview text:active, textview widget#STORAGE list text:active, widget#STORAGE list iconview:active, widget#STORAGE list .nemo-window .nemo-places-sidebar .places-treeview:active, .nemo-window .nemo-places-sidebar widget#STORAGE list .places-treeview:active, widget#STORAGE list .panel popover .sidebar .view:active, .panel popover .sidebar widget#STORAGE list .view:active, widget#STORAGE list treeview.view.sidebar.source-list:active, widget#STORAGE list .budgie-popover row:active, .budgie-popover widget#STORAGE list row:active, widget#STORAGE list .budgie-menu button:active, .budgie-menu widget#STORAGE list button:active {
-  color: scale-alpha(#D3DAE3, 0.75);
+  color: rgba(211, 218, 227, 0.75);
 }
 
 widget#STORAGE list separator.list {
@@ -5176,7 +5176,7 @@ widget#PERFORMANCE searchbar entry, widget#PERFORMANCE searchbar button {
 }
 
 graph-switcher-button.toggle {
-  color: scale-alpha(#D3DAE3, 0.75);
+  color: rgba(211, 218, 227, 0.75);
   font-weight: 500;
 }
 
